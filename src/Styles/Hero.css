@@ -1,0 +1,127 @@
+.Hero {
+  position: relative;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #121212, #1c1c1c);
+  overflow: hidden;
+  color: #f5f5f5;
+}
+
+/* Hero Content */
+.Hero-content {
+  z-index: 2;
+}
+
+/* Hero Title / Logo */
+.Hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ff2d55;
+  text-shadow: 0 0 10px rgba(155, 0, 28, 0.7),
+               0 0 20px rgba(10, 1, 3, 0.5);
+  opacity: 0;
+  animation: fadeInSlide 1.5s forwards 0.2s;
+}
+
+/* Hero Tagline */
+.Hero-tagline {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #e0e0e0;
+  opacity: 0;
+  animation: fadeInSlide 1.5s forwards 0.5s;
+}
+
+/* Fade in + slide up animation */
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Particles Container */
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.particles span {
+  position: absolute;
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  animation: float 10s linear infinite;
+}
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* space between buttons */
+  margin-top: 50px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Resume Button */
+.resume-btn {
+  background-color: #333; /* dark theme */
+  color: #fff;
+  border: 2px solid #333;
+}
+.resume-btn:hover {
+  background-color: #555;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Hire Me Button */
+.hire-btn {
+  background-color: #007bff; /* bright blue */
+  color: #fff;
+  border: 2px solid #007bff;
+}
+.hire-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+
+/* Particle float animation */
+@keyframes float {
+  0% {
+    transform: translateY(100vh) translateX(0) scale(1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) translateX(50px) scale(0.5);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,55 @@
+.projects-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.projects-container {
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+@media (min-width: 768px) { /* md */
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) { /* lg */
+  .projects-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.github-link-container {
+  text-align: center;
+  margin-top: 75px;
+}
+
+.github-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #333; /* Dark background */
+  color: #fff; /* White text */
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.github-button:hover,
+.github-button:focus {
+  background-color: #555; /* Slightly lighter on hover */
+  transform: translateY(-2px); /* Lifts the button slightly on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+

@@ -1,0 +1,78 @@
+/* Main section wrapper */
+.about-section {
+  background-color: #000000;     /* light background for contrast */
+  padding: 4rem 2rem;
+  text-align: center;            /* center-align content */
+  font-family: Arial, sans-serif; /* A clean, readable font */
+  color: #fff; /* White text color for contrast */
+}
+
+/* Content container */
+.about-container {
+  max-width: 800px;              /* keep text nicely contained */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Use a padding or a min-height to ensure it looks good on various screen sizes */
+  padding: 50px 20px;
+}
+  
+
+
+/* Title */
+.about-title {
+  font-size: 3.0rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+}
+
+/* Decorative underline for the title */
+.about-title::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 3px;
+  background-color: #cba50c;    /* accent color */
+  margin: 0.5rem auto 0;
+}
+
+/* Text */
+.about-Text {
+  line-height: 1.6;
+  color: #a6a2a2;
+  max-width: 800px;
+  text-align: justify;
+  text-align-last: left;
+  font-size: 1.25rem; 
+}
+
+/* Optional: subtle fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-container {
+  animation: fadeInUp 0.8s ease forwards;
+}
+@media (max-width: 768px) {
+  .about-me-title {
+    font-size: 2em;
+  }
+  .about-me-text {
+    font-size: 1em;
+  }
+}
+

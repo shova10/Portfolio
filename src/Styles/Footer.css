@@ -1,0 +1,9 @@
+.footer {
+  background-color: #18181b; /* zinc-800 */
+  text-align: center;
+  padding: 1.5rem;
+  color: #71717a; /* zinc-500 */
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  margin-top: 3rem;
+}

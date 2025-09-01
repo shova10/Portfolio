@@ -1,0 +1,89 @@
+.skills-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #0c0a09; /* zinc-900 */
+}
+
+.skills-container {
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  overflow: hidden; /* hide overflowing skills when collapsed */
+  transition: max-height 0.5s ease; /* smooth expand/collapse */
+}
+
+.skills-grid.collapsed {
+  max-height: 600px; /* height to show only initial skills (adjust if needed) */
+}
+
+.skills-grid.expanded {
+  max-height: 2000px; /* large enough to show all skills */
+}
+
+
+@media (min-width: 640px) { /* sm */
+  .skills-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) { /* md */
+  .skills-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.skill-item {
+  background-color: #18181b; /* zinc-800 */
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  transform: translateY(-4px);
+}
+
+.skill-icon-container {
+  margin-bottom: 0.5rem;
+}
+
+.skill-name {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #f4f4f5; /* zinc-100 */
+}
+
+/* See More / See Less Button */
+.see-more-btn {
+  background-color: #27272a; /* dark gray */
+  color: #f4f4f5;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.see-more-btn:hover {
+  background-color: #3f3f46; /* lighter gray on hover */
+  transform: translateY(-2px);
+}
+
