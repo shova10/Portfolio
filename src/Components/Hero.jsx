@@ -1,7 +1,6 @@
 import React from 'react';
 import '../Styles/Hero.css';
-import ResumePDF from '../assets/Shova_Resume.pdf';
-
+import ResumePDF from '../assets/Resume_s.pdf';
 const Hero = ({name,tagline}) => (
     <section className="Hero">
         <div className="Hero-content">
