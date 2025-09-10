@@ -51,9 +51,9 @@ const portfolioData = {
   projects: [
     {
       title: 'Weather App',
-      description: 'A responsive React application styled with Tailwind CSS that provides real-time weather updates. Features include city search, current weather details, a 5-day forecast, error handling, and loading states for a smooth user experience.',
+      description: 'A responsive React application styled with component CSS that provides real-time weather updates. Features include city search, current weather details, a 5-day forecast, error handling, and loading states for a smooth user experience.',
       link: 'https://github.com/shova10/Weather-App',
-      tags: ['React', 'Tailwind CSS', 'API Integration'],
+      tags: ['React', 'CSS', 'API Integration'],
     },
     {
       title: 'Sample-react-app',
